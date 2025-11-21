@@ -1,0 +1,100 @@
+/* ===== STYLE UNTUK SHVNSYH STORE ===== */
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap');
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Poppins", sans-serif;
+}
+
+body {
+  background-color: #f8f5f2;
+  color: #333;
+  line-height: 1.6;
+}
+
+header {
+  background: linear-gradient(135deg, #ffe8d6, #d8e2dc);
+  text-align: center;
+  padding: 2rem 1rem;
+  border-bottom: 3px solid #e7c6ff;
+}
+
+header h1 {
+  font-size: 2rem;
+  color: #5c4b51;
+}
+
+header p {
+  color: #6d6875;
+  font-size: 1rem;
+}
+
+main {
+  padding: 2rem;
+}
+
+.product-list {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 1.5rem;
+}
+
+.product {
+  background-color: #fff;
+  border-radius: 15px;
+  box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+  text-align: center;
+  padding: 1rem;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.product:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 6px 12px rgba(0,0,0,0.2);
+}
+
+.product img {
+  width: 100%;
+  border-radius: 12px;
+}
+
+.product h2 {
+  font-size: 1.1rem;
+  margin: 0.8rem 0;
+  color: #3d405b;
+}
+
+.btn {
+  display: inline-block;
+  background-color: #81b29a;
+  color: #fff;
+  padding: 0.5rem 1rem;
+  border-radius: 8px;
+  text-decoration: none;
+  transition: background-color 0.3s;
+}
+
+.btn:hover {
+  background-color: #6b9080;
+}
+
+footer {
+  text-align: center;
+  padding: 1rem;
+  background-color: #d8e2dc;
+  color: #5c4b51;
+  font-size: 0.9rem;
+  margin-top: 2rem;
+}
+
+/* Responsif untuk HP */
+@media (max-width: 600px) {
+  header h1 {
+    font-size: 1.5rem;
+  }
+  .btn {
+    padding: 0.4rem 0.8rem;
+  }
+}
